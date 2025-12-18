@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WPS Slip – Dahej Plant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>WPS Slip – Dahej Plant</h2>
+
+<label>Plant:</label>
+<input value="Dahej" disabled>
+
+<label>Project No:</label>
+<input id="projectNo">
+
+<label>Joint No:</label>
+<input id="jointNo" disabled>
+
+<hr>
+
+<label>Welder Code:</label>
+<input id="welderCode" onblur="loadWelder()">
+
+<label>Welding Process:</label>
+<select id="process"></select>
+
+<label>Welding Position:</label>
+<select id="position"></select>
+
+<button onclick="generateWPS()">Generate WPS</button>
+
+<div id="wpsResult"></div>
+
+<button onclick="print()">Print WPS</button>
+
+<script src="script.js"></script>
+</body>
+</html>
